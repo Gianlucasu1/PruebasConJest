@@ -11,23 +11,23 @@
 
 
 body{
-    color: white;
-    background-size: cover;
     background-position: center center;
+    background-size: cover;
+    color: white;
     height: 100vh;
 }
 
 li, a, button {
+    color: white;
     font-family: "Montserrat" sans-serif;
     font-size: 16px;
     font-weight: 500;
-    color: white;
     text-decoration: none;
 }
 header{
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 30px 10%;
 }
 
@@ -74,6 +74,14 @@ button {
 
 .section_2{
     padding-left: 100px;
+}
+
+.btn-counter{
+    color: white;
+    font-family: "Montserrat" sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 
