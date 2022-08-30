@@ -6,7 +6,7 @@ import { App } from "./App";
 
 export const FirstApp = () => {
 
-    const [counter, setCounter] = useState(0);
+    
     const [impressions, setImpresions] = useState([]);
 
 
@@ -20,7 +20,7 @@ export const FirstApp = () => {
 
         console.log("The function worked");
         setImpresions(x =>
-                [...x, <App/>]
+                [...x, <App key=""/>]
             )
         
     });

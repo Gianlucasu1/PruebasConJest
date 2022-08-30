@@ -13,15 +13,29 @@ export const CounterApp = ({value}) => {
 
     const [number,setNumber]=useState(value);
 
-    const handleEvent = (eventNew) => {
+    const handleAdd = (event) => {
+        console.log(event)
         setNumber(x=>x+1)
     }
+
+    const handleSubstract = () => {
+        if(number == 0){
+            return 0
+        }
+        else{
+        setNumber(x => x-1);
+        }
+    }
+
+    const handleReset = (  ) => setNumber(value) ;
 
     return (
         <>
         <h1>Counter App</h1>
         <h2>This is the counter Value : {number}</h2>
-        <button className="btn-counter" onClick={handleEvent}>+1</button>
+        <button className="btn-counter" onClick={handleAdd}>+1</button>
+        <button className="btn-counter" onClick={handleSubstract}>-1</button>
+        <button className="btn-counter" onClick={handleReset}>RESET</button>
         </>
     )
 }

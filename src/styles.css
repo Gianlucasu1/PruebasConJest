@@ -85,6 +85,44 @@ button {
 }
 
 
+.grid > div {
+    background-color: #ecf0f1;
+    color: black;
+    padding: 1em;
+    
+}
+.grid_2 > div {
+    background-color: #ecf0f1;
+    color: black;
+    padding: 1em;
+    
+}
+
+.grid > div:hover {
+    border: 5px solid #f1c40f;
+    
+}
+.grid_2 > div:hover {
+    border: 5px solid #f1c40f;
+    
+}
 
 
 
+.grid {
+    padding: 20px;
+    display: grid;
+    gap:10px; 
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(100px,auto);
+}
+
+.grid_2 {
+    padding:20px;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+.element4{
+    grid-column: 1/4;
+}
