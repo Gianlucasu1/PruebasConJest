@@ -15,16 +15,14 @@ import {GridExample} from "./components/GridExample"
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <Navbar/>
-        {//<EjercicioProps name="Gianluca" lastname="Casu"/>
-        }
+        //<EjercicioProps name="Gianluca" lastname="Casu"/>
+        
         {//<App/> 
         //<FirstApp/>
-        }
-        <CounterApp
-            value= {0}
-        />
-        <FirstApp/>
-        {//<GridExample/>
+        
+        //<CounterApp value= {0}/>
+        //<FirstApp/>
+        //<GridExample/>
         }
 
     </React.StrictMode>

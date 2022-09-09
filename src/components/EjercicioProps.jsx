@@ -10,7 +10,9 @@ export const EjercicioProps = ({name, lastname, number}) => {
     return (
     <>
 
-        <h1>Hola, es un gusto{name} {lastname}. Tu turno es el # {number}</h1>
+    <h1>Hola mi nombre es { name }</h1>
+    <p>{lastname}</p>
+    <p>My favorite number is {number}</p>
 
     </>
     );
@@ -24,5 +26,5 @@ EjercicioProps.propTypes = {
 }
 
 EjercicioProps.defaultProps = {
-    value: 8
+    number:8
 }
