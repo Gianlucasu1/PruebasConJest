@@ -126,3 +126,23 @@ button {
 .element4{
     grid-column: 1/4;
 }
+
+.container { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+
+}
+
+.container > div > h1, h2{
+    padding: 0.5em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

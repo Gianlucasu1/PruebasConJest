@@ -27,15 +27,17 @@ export const CounterApp = ({value}) => {
         }
     }
 
-    const handleReset = (  ) => setNumber(value) ;
+    const handleReset = (  ) => setNumber( x => { return x = 0 + value}) ;
 
     return (
         <>
         <h1>Counter App</h1>
-        <h2>This is the counter Value : {number}</h2>
-        <button className="btn-counter" onClick={handleAdd}>+1</button>
-        <button className="btn-counter" onClick={handleSubstract}>-1</button>
-        <button className="btn-counter" onClick={handleReset}>RESET</button>
+        <h2 data-testid="counter-test">This is the counter Value : {number}</h2>
+        <div className="center">
+            <button className="btn-counter" onClick={handleAdd}>+1</button>
+            <button className="btn-counter" onClick={handleSubstract}>-1</button>
+            <button arial-label="btn-reset" className="btn-counter" onClick={handleReset}>RESET</button>
+        </div>
         </>
     )
 }

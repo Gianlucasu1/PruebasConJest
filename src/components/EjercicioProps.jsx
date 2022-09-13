@@ -10,8 +10,8 @@ export const EjercicioProps = ({name, lastname, number}) => {
     return (
     <>
 
-    <h1>Hola mi nombre es { name }</h1>
-    <p>{lastname}</p>
+    <h1 data-testid="test-tittle">Hola mi nombre es {name}</h1>
+    <p data-testid="test-p">{lastname}</p>
     <p>My favorite number is {number}</p>
 
     </>
